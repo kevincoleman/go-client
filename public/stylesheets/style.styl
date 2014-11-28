@@ -46,28 +46,52 @@ header
   overflow hidden
 
 .main-content
-  float left
-  width 300px
+  margin 0 auto
+  width 950px
+
+  .game
+    line-height 0
+
+    .space
+      display inline-block
+      background-image url(/images/cross.png)
+      background-size cover
+      width 50px
+      height 50px
+
+      img
+        width 100%
+        height: 100%
+
+    .space.dot
+      background-image url(/images/crossDot.png)
+
+    .space.top
+      background-image url(/images/topT.png)
+
+    .space.right
+      background-image url(/images/rightT.png)
+
+    .space.bottom
+      background-image url(/images/bottomT.png)
+
+    .space.left
+      background-image url(/images/leftT.png)
+
+    .space.top.left
+      background-image url(/images/topLeft.png)
+
+    .space.top.right
+      background-image url(/images/topRight.png)
+
+    .space.bottom.left
+      background-image url(/images/bottomLeft.png)
+
+    .space.bottom.right
+      background-image url(/images/bottomRight.png)
 
   p
     margin-bottom 20px
-
-.sidebar
-  float left
-  width 200px
-
-  .widget
-
-    /*
-     * Note the lack of vendor
-     * prefixes here. Nib will
-     * add them for us
-     */
-    border-radius 3px
-    border 1px solid #ccc
-    margin-left 20px
-    background-color background-color
-    box-shadow inset 0px 0px 0px 3px rgba(#fff, 0.8), 0px 3px 0px -2px rgba(#000, 0.1)
 
     h1
       font-family 'Quicksand'
